@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b10">
+  <title>ICONIC4 BD | Free Fire Tournament</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">I4</span><span>ICONIC4 <b>BD</b></span></a>
+    <button id="menuBtn" class="menu-btn" aria-label="মেনু খুলুন">☰</button>
+    <nav id="nav">
+      <a href="#tournaments" data-bn="টুর্নামেন্ট" data-en="Tournaments">টুর্নামেন্ট</a>
+      <a href="#leaderboard" data-bn="লিডারবোর্ড" data-en="Leaderboard">লিডারবোর্ড</a>
+      <a href="#register" data-bn="রেজিস্ট্রেশন" data-en="Registration">রেজিস্ট্রেশন</a>
+      <a href="#admin" data-bn="অ্যাডমিন" data-en="Admin">অ্যাডমিন</a>
+    </nav>
+    <div class="top-actions">
+      <button id="langBtn" class="btn btn-ghost">EN</button>
+      <a class="btn btn-red" href="#register" data-bn="এখনই যোগ দাও" data-en="Join Now">এখনই যোগ দাও</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-bn="ফ্রি ফায়ার এসপোর্টস টুর্নামেন্ট" data-en="FREE FIRE ESPORTS TOURNAMENT">ফ্রি ফায়ার এসপোর্টস টুর্নামেন্ট</p>
+        <h1>YOUR BATTLE.<br><span>YOUR GLORY.</span></h1>
+        <p class="hero-sub" data-bn="স্কোয়াড তৈরি করো। টুর্নামেন্টে যোগ দাও। নিজের দক্ষতা দেখাও।" data-en="Build your squad. Join tournaments. Show your skills.">স্কোয়াড তৈরি করো। টুর্নামেন্টে যোগ দাও। নিজের দক্ষতা দেখাও।</p>
+        <div class="hero-actions">
+          <a class="btn btn-red" href="#tournaments" data-bn="টুর্নামেন্ট দেখো →" data-en="Explore Tournaments →">টুর্নামেন্ট দেখো →</a>
+          <a class="btn btn-ghost" href="#register" data-bn="টিম রেজিস্টার" data-en="Register Team">টিম রেজিস্টার</a>
+        </div>
+        <p class="notice" data-bn="ডেমো টুর্নামেন্টের তথ্য—অ্যাডমিন প্যানেল থেকে নিজের তথ্য যোগ করো।" data-en="Sample tournament data—add your real events from the admin panel.">ডেমো টুর্নামেন্টের তথ্য—অ্যাডমিন প্যানেল থেকে নিজের তথ্য যোগ করো।</p>
+      </div>
+      <div class="hero-art" aria-label="Gaming themed graphic">
+        <div class="ring ring-one"></div><div class="ring ring-two"></div>
+        <div class="crosshair">✦</div><div class="art-label">I4<br><small>ESPORTS</small></div>
+        <div class="art-bottom">PLAY SMART <span>•</span> FIGHT FAIR</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <article class="stat"><span class="stat-icon">♜</span><div><small data-bn="টুর্নামেন্ট" data-en="Tournaments">টুর্নামেন্ট</small><strong id="statTournaments">0</strong></div></article>
+      <article class="stat"><span class="stat-icon">♟</span><div><small data-bn="রেজিস্ট্রেশন" data-en="Registrations">রেজিস্ট্রেশন</small><strong id="statTeams">—</strong></div></article>
+      <article class="stat"><span class="stat-icon">🏆</span><div><small data-bn="মোট পুরস্কার" data-en="Total Prize Pool">মোট পুরস্কার</small><strong id="statPrize">—</strong></div></article>
+    </section>
+
+    <section id="tournaments" class="section">
+      <div class="section-head"><div><p class="eyebrow">COMPETE • WIN • REPEAT</p><h2 data-bn="আসন্ন টুর্নামেন্ট" data-en="Upcoming Tournaments">আসন্ন টুর্নামেন্ট</h2></div><span class="pill">FREE FIRE</span></div>
+      <div id="tournamentGrid" class="tournament-grid"><div class="empty">Firebase সেটআপ করলে টুর্নামেন্ট এখানে দেখা যাবে।</div></div>
+    </section>
+
+    <section id="leaderboard" class="section">
+      <div class="section-head"><div><p class="eyebrow">TOP SQUADS</p><h2 data-bn="লিডারবোর্ড" data-en="Leaderboard">লিডারবোর্ড</h2></div></div>
+      <div class="table-wrap"><table><thead><tr><th>#</th><th data-bn="টিম" data-en="Team">টিম</th><th data-bn="পয়েন্ট" data-en="Points">পয়েন্ট</th><th data-bn="কিল" data-en="Kills">কিল</th></tr></thead><tbody id="leaderboardBody"><tr><td colspan="4" class="empty">এখনো কোনো ফলাফল প্রকাশ করা হয়নি।</td></tr></tbody></table></div>
+    </section>
+
+    <section id="register" class="section register-section">
+      <div class="section-head"><div><p class="eyebrow">YOUR SQUAD STARTS HERE</p><h2 data-bn="টিম রেজিস্ট্রেশন" data-en="Team Registration">টিম রেজিস্ট্রেশন</h2></div></div>
+      <form id="registerForm" class="form-card">
+        <div class="form-grid">
+          <label><span data-bn="টিমের নাম *" data-en="Team Name *">টিমের নাম *</span><input name="teamName" maxlength="32" required placeholder="ICONIC4"></label>
+          <label><span data-bn="ক্যাপ্টেনের নাম *" data-en="Captain Name *">ক্যাপ্টেনের নাম *</span><input name="captainName" maxlength="40" required></label>
+          <label><span>Captain Free Fire UID *</span><input name="captainUid" inputmode="numeric" pattern="[0-9]{5,20}" maxlength="20" required placeholder="শুধু সংখ্যা"></label>
+          <label><span>যোগাযোগের ইমেইল *</span><input name="email" type="email" maxlength="100" required></label>
+          <label><span>Player 2 UID *</span><input name="player2" inputmode="numeric" pattern="[0-9]{5,20}" required></label>
+          <label><span>Player 3 UID *</span><input name="player3" inputmode="numeric" pattern="[0-9]{5,20}" required></label>
+          <label><span>Player 4 UID *</span><input name="player4" inputmode="numeric" pattern="[0-9]{5,20}" required></label>
+          <label><span data-bn="টুর্নামেন্ট নির্বাচন *" data-en="Select Tournament *">টুর্নামেন্ট নির্বাচন *</span><select id="tournamentSelect" name="tournamentId" required><option value="">আগে টুর্নামেন্ট যোগ করুন</option></select></label>
+        </div>
+        <label class="check-label"><input type="checkbox" required> <span data-bn="আমি নিশ্চিত করছি যে তথ্যগুলো সঠিক এবং টুর্নামেন্টের নিয়ম মেনে চলব।" data-en="I confirm the details are correct and I will follow the tournament rules.">আমি নিশ্চিত করছি যে তথ্যগুলো সঠিক এবং টুর্নামেন্টের নিয়ম মেনে চলব।</span></label>
+        <button class="btn btn-red submit-btn" type="submit" data-bn="রেজিস্ট্রেশন জমা দাও" data-en="Submit Registration">রেজিস্ট্রেশন জমা দাও</button>
+        <p id="registerMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+
+    <section id="admin" class="section admin-section">
+      <div class="section-head"><div><p class="eyebrow">AUTHORIZED ACCESS ONLY</p><h2 data-bn="অ্যাডমিন প্যানেল" data-en="Admin Panel">অ্যাডমিন প্যানেল</h2></div></div>
+      <div class="form-card">
+        <p class="muted" data-bn="শুধু অনুমোদিত অ্যাডমিন অ্যাকাউন্ট ব্যবহার করুন। অ্যাডমিন UID Firebase Rules-এ অনুমোদন করতে হবে।" data-en="Use an authorized admin account only. The admin UID must be authorized in Firebase Rules.">শুধু অনুমোদিত অ্যাডমিন অ্যাকাউন্ট ব্যবহার করুন। অ্যাডমিন UID Firebase Rules-এ অনুমোদন করতে হবে।</p>
+        <form id="loginForm" class="login-grid">
+          <label><span>Admin email</span><input name="adminEmail" type="email" required autocomplete="username"></label>
+          <label><span>Password</span><input name="adminPassword" type="password" required autocomplete="current-password"></label>
+          <button class="btn btn-red" type="submit">Login</button>
+        </form>
+        <p id="loginMessage" class="form-message" role="status"></p>
+        <div id="adminDashboard" hidden>
+          <div class="admin-bar"><h3>Dashboard</h3><button id="logoutBtn" class="btn btn-ghost" type="button">Logout</button></div>
+          <form id="tournamentForm" class="form-grid admin-form">
+            <label><span>Tournament name</span><input name="name" required maxlength="70"></label>
+            <label><span>Mode</span><select name="mode"><option>Squad</option><option>Duo</option><option>Solo</option></select></label>
+            <label><span>Start date/time</span><input name="startAt" type="datetime-local" required></label>
+            <label><span>Prize pool (BDT)</span><input name="prize" type="number" min="0" max="10000000" value="0" required></label>
+            <label><span>Slots</span><input name="slots" type="number" min="1" max="1000" value="12" required></label>
+            <button class="btn btn-red" type="submit">Create Tournament</button>
+          </form>
+          <p id="adminMessage" class="form-message"></p>
+          <h3>Team registrations</h3>
+          <div class="table-wrap"><table><thead><tr><th>Team</th><th>Captain</th><th>Tournament</th><th>Status</th><th>Action</th></tr></thead><tbody id="registrationsBody"><tr><td colspan="5">Login to load registrations.</td></tr></tbody></table></div>
+          <h3 class="results-title">Publish leaderboard result</h3>
+          <form id="resultForm" class="form-grid admin-form">
+            <label><span>Team name</span><input name="teamName" required maxlength="32"></label>
+            <label><span>Points</span><input name="points" type="number" min="0" max="10000" required></label>
+            <label><span>Kills</span><input name="kills" type="number" min="0" max="1000" required></label>
+            <button class="btn btn-red" type="submit">Publish Result</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">I4</span><span>ICONIC4 <b>BD</b></span></a><p>Community esports • Play fair • Respect every player</p><small>Fan-run tournament community. Not affiliated with Garena.</small></footer>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
